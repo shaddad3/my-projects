@@ -1,1 +1,1 @@
-
+In this project I created a simplified database of students in C. The data stored for each student is: Name (first and last), ID, GPA, and Credit Hours. Additionally, there are further lists in the database such as lists for each class level, Honor students, Academic Probation students, and more. In the database the user can: create a new student, read from the database, update the database, and delete from the database. Finally, this program uses dynamic memory allocation to store the students' info.
