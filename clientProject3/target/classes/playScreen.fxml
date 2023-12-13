@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="MyController"
+            prefHeight="400.0" prefWidth="600.0"
+            fx:id="root3">
+
+    <left>
+        <!--        <Button text="temp"/>-->
+    </left>
+
+    <right>
+
+    </right>
+
+    <top>
+        <HBox style="-fx-spacing: 200">
+            <MenuBar fx:id="menuBar" prefWidth="75">
+                <Menu fx:id="menu" text="Menu">
+                    <MenuItem fx:id="freshStart" text="Fresh Start" onAction="#freshStartMethod"/>
+                    <MenuItem fx:id="exit" text="Exit" onAction="#exitMethod"/>
+                </Menu>
+            </MenuBar>
+            <Text fx:id="title" text="Category: " disable="true" style="-fx-alignment: center"/>
+        </HBox>
+    </top>
+
+    <center>
+        <VBox style="-fx-padding: 50; -fx-spacing: 50" alignment="CENTER">
+            <HBox spacing="30" alignment="CENTER">
+                <TextArea fx:id="wordSizeBox" wrapText="true" disable="true" text="The word has _ letters" prefHeight="100" prefWidth="200"/>
+                <TextArea fx:id="guessFeedback" wrapText="true" disable="true" text="_ is in the word at position _" prefHeight="100" prefWidth="200"/>
+            </HBox>
+
+            <HBox spacing="30" alignment="CENTER">
+                <TextArea fx:id="guessesRemaining" wrapText="true" disable="true" text="_ of 6 guesses remaining" prefHeight="100" prefWidth="200"/>
+                <TextArea fx:id="wordSoFar" wrapText="true" disable="true" text="Word: _ _ _ _ _ _ _ _" prefHeight="100" prefWidth="200"/>
+            </HBox>
+        </VBox>
+    </center>
+
+
+    <bottom>
+        <VBox>
+            <HBox style="-fx-padding: 10" alignment="CENTER_RIGHT">
+                <ImageView fx:id="categoryPic" fitHeight="145" fitWidth="145">
+                    <image>
+                        <Image url="@/owl.png" />
+                    </image>
+                </ImageView>
+            </HBox>
+            <HBox style="-fx-padding: 25">
+                <VBox>
+                    <TextField fx:id="charBox" prefHeight="50" prefWidth="100" promptText="Character: "/>
+                    <Button fx:id="send" text="Send" prefHeight="50" prefWidth="100" onAction="#sendMethod"/> <!-- onAction="#sendMethod" -->
+                </VBox>
+                <TextArea fx:id="wordBank" wrapText="true" disable="true" prefWidth="275" prefHeight="100" text="Characters guessed so far:"/>
+                <TextArea fx:id="narrator" wrapText="true" disable="true" prefWidth="275" prefHeight="100" text="Narrator: "/>
+            </HBox>
+        </VBox>
+
+    </bottom>
+
+</BorderPane>

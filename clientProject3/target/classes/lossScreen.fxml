@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="MyController"
+      prefHeight="600.0" prefWidth="600.0"
+      fx:id="root5">
+
+    <HBox spacing="150">
+        <MenuBar fx:id="menuBar" prefWidth="100">
+            <Menu fx:id="menu" text="Menu">
+                <MenuItem fx:id="freshStart" text="Fresh Start" onAction="#freshStartMethod"/>
+                <MenuItem fx:id="exit" text="Exit" onAction="#exitMethod"/>
+            </Menu>
+        </MenuBar>
+        <TextField fx:id="titleWelcome" text="HangMan" prefWidth="200" disable="true" alignment="CENTER"/>
+    </HBox>
+
+    <VBox alignment="CENTER_RIGHT">
+        <TextArea fx:id="loseText" prefHeight="400" prefWidth="600" wrapText="true" disable="true"
+                  text="                    SORRY YOU LOSE!&#10;&#10;-Thank you for playing:)&#10;-Press exit in the menubar to exit the game&#10;-Press fresh start to play again"
+        />
+    </VBox>
+
+    <HBox alignment="CENTER">
+        <ImageView fx:id="lossPic" fitHeight="250" fitWidth="250">
+            <image>
+                <Image url="@/loss.png" />
+            </image>
+        </ImageView>
+    </HBox>
+
+
+</VBox>
+

@@ -1,0 +1,11 @@
+#root5 {
+    -fx-background-color: rgb(156, 183, 255); /* Set background color */
+}
+
+
+#loseText{
+    -fx-font-size: 25;
+    -fx-opacity: 0.8;
+    -fx-border-color: #0830a9;
+    -fx-border-width: 5;
+}

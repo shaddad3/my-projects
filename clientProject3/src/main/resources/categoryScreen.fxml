@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="MyController"
+      prefHeight="400.0" prefWidth="600.0"
+      fx:id="root2">
+    <HBox spacing="150">
+        <MenuBar fx:id="menuBar" prefWidth="100">
+            <Menu fx:id="menu" text="Menu">
+                <MenuItem fx:id="freshStart" text="Fresh Start" onAction="#freshStartMethod"/>
+                <MenuItem fx:id="exit" text="Exit" onAction="#exitMethod"/>
+            </Menu>
+        </MenuBar>
+        <TextField fx:id="titleWelcome" text="HangMan" prefWidth="200" disable="true" alignment="CENTER"/>
+    </HBox>
+
+    <TextField fx:id="textField" prefHeight="100" prefWidth="300" disable="true"
+              text="Please select one of the 3 categories to play, and then hit 'Confirm'!"/>
+
+    <HBox spacing="90">
+        <VBox alignment="TOP_CENTER" >
+            <ImageView fx:id="categoryPic" fitHeight="145" fitWidth="145">
+                <image>
+                    <Image url="@/owl.png" />
+                </image>
+            </ImageView>
+        </VBox>
+        <VBox spacing="20" alignment="CENTER">
+            <Button fx:id= "category1" prefHeight="100" prefWidth="300" text="Category 1: " onAction="#category1Method"/>
+            <Button fx:id= "category2" prefHeight="100" prefWidth="300" text="Category 2: " onAction="#category2Method"/>
+            <Button fx:id= "category3" prefHeight="100" prefWidth="300" text="Category 3: " onAction="#category3Method"/>
+            <Button fx:id= "confirm" prefHeight="100" prefWidth="300" text="Confirm" disable="true" onAction="#confirmMethod"/>
+        </VBox>
+    </HBox>
+<!--    <VBox spacing="20" alignment="CENTER">-->
+<!--        <Button fx:id= "category1" prefHeight="100" prefWidth="300" text="Category 1: " onAction="#category1Method"/>-->
+<!--        <Button fx:id= "category2" prefHeight="100" prefWidth="300" text="Category 2: " onAction="#category2Method"/>-->
+<!--        <Button fx:id= "category3" prefHeight="100" prefWidth="300" text="Category 3: " onAction="#category3Method"/>-->
+<!--        <Button fx:id= "confirm" prefHeight="100" prefWidth="300" text="Confirm" disable="true" onAction="#confirmMethod"/>-->
+<!--    </VBox>-->
+
+
+</VBox>
+
+        <!--        <?xml version="1.0" encoding="UTF-8"?>-->
+
+        <!--        <?import javafx.scene.layout.BorderPane?>-->
+        <!--        <?import javafx.scene.control.Button?>-->
+        <!--        <?import javafx.scene.control.TextField?>-->
+
+        <!--        <?import javafx.scene.layout.VBox?>-->
+        <!--<BorderPane xmlns:fx="http://javafx.com/fxml/1"-->
+        <!--            fx:id = "root" styleClass="border" fx:controller = "MyController">-->
+        <!--&lt;!&ndash; TODO Add Nodes &ndash;&gt;-->
+        <!--<left>-->
+        <!--    <VBox fx:id = "Vbox">-->
+        <!--        <Button fx:id = "button1" text = "button1" prefHeight="50" prefWidth="125" onAction="#button1Method"/>-->
+        <!--        <Button fx:id = "button2" text = "button2" prefHeight="50" prefWidth="125" onAction="#button2Method"/>-->
+        <!--    </VBox>-->
+        <!--</left>-->
+
+        <!--<center>-->
+        <!--    <VBox fx:id="center">-->
+        <!--        <TextField fx:id ="centerText" prefHeight="100" prefWidth="150" promptText="enter text here then press button 1"/>-->
+        <!--    </VBox>-->
+        <!--</center>-->
+
+        <!--<right>-->
+        <!--    <TextField fx:id ="rightText" prefHeight="100" prefWidth="250" text="final string goes here" disable="true"/>-->
+        <!--</right>-->
+        <!--</BorderPane>-->
+
+
