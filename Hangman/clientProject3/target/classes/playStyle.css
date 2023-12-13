@@ -1,0 +1,51 @@
+#root3{
+    -fx-background-color: rgba(255, 195, 235, 0.91);
+}
+
+#title{
+    -fx-font-size: 25;
+    -fx-fill: #000000;
+}
+
+#wordSizeBox,
+#guessFeedback{
+    -fx-font-size: 18; /* Set font size */
+    -fx-text-fill: #e70d0d; /* Set text color */
+    -fx-opacity: 0.9; /* make text darker */
+}
+
+#guessesRemaining,
+#wordSoFar {
+    -fx-font-size: 18; /* Set font size */
+    -fx-text-fill: #3e69f8; /* Set text color */
+    -fx-opacity: 0.9; /* make text darker */
+}
+
+
+#charBox {
+    -fx-prompt-text-fill: #0021fa; /* Set prompt text color */
+}
+
+
+#send {
+    -fx-background-color: #ab32cd; /* Set button background color */
+    -fx-text-fill: #050101; /* Set button text color */
+}
+
+
+#wordBank {
+    -fx-font-size: 16; /* Set font size */
+    -fx-opacity: 0.9; /* make text darker */
+}
+
+
+#narrator{
+    -fx-font-size: 13; /* Set font size */
+    -fx-opacity: 0.9; /* make text darker */
+}
+
+#categoryPic {
+    -fx-fit-height: 110;
+    -fx-fit-width: 110;
+    -fx-margin-left: 200; /* Adjust this value to move the owl picture to the left */
+}
