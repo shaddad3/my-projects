@@ -657,7 +657,7 @@ def command_9(dbConn):
 
 
 def main():
-    dbConn = sqlite3.connect("CTA2_L_daily_ridership.db")
+    dbConn = sqlite3.connect("CTA_L_daily_ridership.db")
     general_stats(dbConn)
 
     done = False
